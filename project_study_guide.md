@@ -42,4 +42,9 @@ Base de dados em memória, extremamente rápida. pretendo usá-la para duas cois
 
 ### Docker + Docker Compose
 
-Empacota a aplicação inteira em containers. Com um único comando `docker-compose up` qualquer pessoa levanta o PostgreSQL, o Redis e a API sem instalar nada manualmente.
+Empacota a aplicação inteira em containers. Com um único comando `docker-compose up` qualquer pessoa levanta o PostgreSQL, o Redis e a API sem instalar nada manualmente
+
+
+### Pydantic
+
+Define os schemas dos dados de entrada e saída. Se alguém enviar um email inválido ou um campo a mais, o Pydantic rejeita automaticamente antes de chegar à lógica da aplicação
