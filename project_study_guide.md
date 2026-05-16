@@ -48,3 +48,18 @@ Empacota a aplicação inteira em containers. Com um único comando `docker-comp
 ### Pydantic
 
 Define os schemas dos dados de entrada e saída. Se alguém enviar um email inválido ou um campo a mais, o Pydantic rejeita automaticamente antes de chegar à lógica da aplicação
+
+
+## COMO TUDO SE LIGA
+
+```text
+Cliente (Postman / Frontend)
+        ↓ HTTP Request
+    FastAPI  ←→  Pydantic (valida dados)
+        ↓
+    SQLAlchemy  ←→  PostgreSQL (dados persistentes)
+        ↓
+      Redis (tokens + rate limiting)
+        ↓
+    JWT (autenticação em cada pedido)
+```
