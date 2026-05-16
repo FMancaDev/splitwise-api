@@ -50,6 +50,13 @@ Empacota a aplicação inteira em containers. Com um único comando `docker-comp
 Define os schemas dos dados de entrada e saída. Se alguém enviar um email inválido ou um campo a mais, o Pydantic rejeita automaticamente antes de chegar à lógica da aplicação
 
 
+##### NOTA
+
+feat:     adicionei novas funcionalidades
+fix:      dei fix a um bug que estava a acontecer
+refactor: mudei a estrutura do codigo sem mudar o comportamento da app
+docs:     alterei apenas a documetacao - se mudar a logica da app
+
 ## COMO TUDO SE LIGA
 
 ```text
