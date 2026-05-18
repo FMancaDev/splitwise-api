@@ -1,6 +1,7 @@
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
+# this file read all vatiables in .env and validates them
 class Settings(BaseSettings):
     app_name: str
     debug: bool = False
