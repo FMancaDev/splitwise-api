@@ -70,3 +70,16 @@ Cliente (Postman / Frontend)
         ↓
     JWT (autenticação em cada pedido)
 ```
+
+..............................................................................................
+
+### app/db/session.py
+
+cria a ligacao a base de dados Postgresql e disponibiliza uma sessao que os endpoints vao usar para fazer queries
+
+* **como funciona: O SQLAlchemy tem 2 conceitos principais**<br><br>
+**Engine: é a ligacao fisica á base de dados, criada em DATABASE_URL**<br><br>
+**SessionLocal: é onde varias sessoes sao criadas, cada vez que um endpoint precisa de falar com a base de dados, pede uma sessao, usa-a, e fecha-a no fim**<br>
+
+NOTA:
+
