@@ -56,6 +56,7 @@ feat:     adicionei novas funcionalidades
 fix:      dei fix a um bug que estava a acontecer
 refactor: mudei a estrutura do codigo sem mudar o comportamento da app
 docs:     alterei apenas a documetacao - se mudar a logica da app
+chore:    usado para manutencoes que nao alteram funcionalidades da app nem corrigem bugs
 
 ## COMO TUDO SE LIGA
 
